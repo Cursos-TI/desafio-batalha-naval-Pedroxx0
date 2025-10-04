@@ -53,7 +53,7 @@ void criarOctaedro(int matriz[TAM_HAB][TAM_HAB]) {
     for (int i = 0; i < TAM_HAB; i++) {
         for (int j = 0; j < TAM_HAB; j++) {
             // Preenche com 1 formando um losango centrado
-            if (abs(i - TAM_HAB / 2) + abs(j - TAM_HAB / 2) <= TAM_HAB / 2)
+            if ((i - TAM_HAB / 2) + abs(j - TAM_HAB / 2) <= TAM_HAB / 2)
                 matriz[i][j] = 1;
             else
                 matriz[i][j] = 0;
